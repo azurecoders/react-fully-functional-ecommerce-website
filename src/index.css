@@ -1,0 +1,169 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #270858;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  height: 80px;
+}
+
+.brand {
+  font-size: bold;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.brand h1 {
+  font-size: 1.3rem;
+}
+
+.search-bar {
+  width: 60%;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.search-bar input {
+  width: 55%;
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.cart {
+  width: 20%;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: #4b1b78;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  gap: 10px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.items {
+  cursor: pointer;
+}
+
+.cart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.cart-card {
+  width: 60%;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+  align-items: center;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.image-container {
+  width: 40%;
+  height: 200px;
+}
+
+.image-container img {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .cart-card {
+    width: 95% !important;
+    padding: 10px;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .detail-container {
+    gap: 0rem;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-bar {
+    width: 40%;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .cart-card {
+    width: 80%;
+  }
+}
